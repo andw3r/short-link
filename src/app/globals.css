@@ -4,7 +4,7 @@
   --background: #e6eafb;
   --navbar: #B5C0F4;
   --surface: #ffffff;
-  --border: #0080ff;
+  --border-header: #EAEBEC;
   --button-primary: #4270e3;
   --primary-hover: #2c4fa5;
   --accent: #7f3afa;
@@ -29,7 +29,7 @@
   --color-background: var(--background);
   --color-navbar: var(--navbar);
   --color-surface: var(--surface);
-  --color-border: var(--border);
+  --color-header: var(--border-header);
   --color-button-primary: var(--button-primary);
   --color-primary-hover: var(--primary-hover);
   --color-accent: var(--accent);
