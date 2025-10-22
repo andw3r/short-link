@@ -1,26 +1,50 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #e6eafb;
+  --navbar: #B5C0F4;
+  --surface: #ffffff;
+  --border: #0080ff;
+  --button-primary: #4270e3;
+  --primary-hover: #2c4fa5;
+  --accent: #7f3afa;
+  --text-primary: #161618;
+  --text-secondary: #535459;
 }
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0b0132;
+    --surface: #161618;
+    --border: #333337;
+    --primary: #7f3afa;
+    --primary-hover: #5b0dc3;
+    --accent: #4270e3;
+    --text: #e6eafb;
+    --text-secondary: #9b9ca1;
+  }
+} */
 
 @theme inline {
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-navbar: var(--navbar);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-button-primary: var(--button-primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-accent: var(--accent);
+  --color-primary: var(--text-primary);
+  --color-secondary: var(--text-secondary);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --radius-card: 16px;
+  --radius-large: 24px;
+
+  --shadow-card: 0 1px 4px rgba(0,0,0,0.06);
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  font-family: var(--font-sans, system-ui, sans-serif);
+  @apply antialiased;
 }
