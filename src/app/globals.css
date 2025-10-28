@@ -7,6 +7,7 @@
   --border-header: #EAEBEC;
   --button-primary: #4270e3;
   --primary-hover: #2c4fa5;
+  --white-hover: #D6DCF7;
   --accent: #7f3afa;
   --text-primary: #161618;
   --text-secondary: #535459;
@@ -15,7 +16,9 @@
 /* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0b0132;
+    --navbar: #1A1C3A;
     --surface: #161618;
+    --border-header: #29293399;
     --border: #333337;
     --primary: #7f3afa;
     --primary-hover: #5b0dc3;
@@ -32,6 +35,7 @@
   --color-header: var(--border-header);
   --color-button-primary: var(--button-primary);
   --color-primary-hover: var(--primary-hover);
+  --color-white-hover: var(--white-hover);
   --color-accent: var(--accent);
   --color-primary: var(--text-primary);
   --color-secondary: var(--text-secondary);
@@ -42,9 +46,13 @@
   --shadow-card: 0 1px 4px rgba(0,0,0,0.06);
 }
 
+.shadow-card {
+  box-shadow: var(--shadow-card);
+}
+
 body {
   background: var(--background);
-  color: var(--text);
+  color: var(--text-primary);
   font-family: var(--font-sans, system-ui, sans-serif);
   @apply antialiased;
 }
