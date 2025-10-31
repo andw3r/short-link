@@ -5,6 +5,7 @@
   --navbar: #B5C0F4;
   --surface: #ffffff;
   --border-header: #EAEBEC;
+  --border-input: #EAEBEC;
   --button-primary: #4270e3;
   --primary-hover: #2c4fa5;
   --white-hover: #D6DCF7;
@@ -33,6 +34,7 @@
   --color-navbar: var(--navbar);
   --color-surface: var(--surface);
   --color-header: var(--border-header);
+  --color-input: var(--border-input);
   --color-button-primary: var(--button-primary);
   --color-primary-hover: var(--primary-hover);
   --color-white-hover: var(--white-hover);
@@ -55,4 +57,48 @@ body {
   color: var(--text-primary);
   font-family: var(--font-sans, system-ui, sans-serif);
   @apply antialiased;
+}
+
+@layer components {
+  .form-item {
+    @apply flex flex-col gap-1 mb-4;
+  }
+
+  .form-input {
+    @apply relative h-fit;
+  }
+
+  .form-item .form-input span {
+    @apply absolute left-0 bg-input h-full w-12 rounded-2xl flex top-0 justify-center items-center text-2xl text-button-primary;
+  }
+
+  .form-item label {
+    @apply text-[18px] text-secondary;
+  }
+
+  .form-item input {
+    @apply w-full rounded-xl border-4 border-input pl-14 bg-white px-3 py-2 text-[#161618] placeholder:text-[#9B9CA1] focus:outline-none focus:ring-2 focus:ring-[#4270E3] focus:border-transparent transition;
+  }
+
+  .or-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-input);
+    font-weight: 500;
+    font-size: 14px;
+    margin: 20px 0 12px;
+  }
+
+  .or-divider::before,
+  .or-divider::after {
+    content: "";
+    display: block;
+    width: 140px;
+    height: 1px;
+    background-color: var(--color-input);
+    margin: 0 14px;
+    opacity: 0.5;
+  }
+
 }
