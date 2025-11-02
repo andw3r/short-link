@@ -12,6 +12,7 @@
   --accent: #7f3afa;
   --text-primary: #161618;
   --text-secondary: #535459;
+  --action-button: #F5F6FB;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -41,6 +42,7 @@
   --color-accent: var(--accent);
   --color-primary: var(--text-primary);
   --color-secondary: var(--text-secondary);
+  --color-action-button: var(--action-button);
 
   --radius-card: 16px;
   --radius-large: 24px;
