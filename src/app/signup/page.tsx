@@ -8,9 +8,9 @@ import { CiLock } from "react-icons/ci";
 export default function SignUp () {
   return (
     <div className="min-h-screen flex items-center justify-center p-4">
-      <div className="flex px-7 pt-8 pb-5 w-fit h-fit bg-surface rounded-card">
+      <div className="flex px-3 sm:px-5 md:px-7 pt-4 sm:pt-6 md:pt-8 pb-3.5 sm:pb-5 w-fit h-fit bg-surface rounded-card">
         <div className="flex flex-col">
-          <h1 className="text-[32px] text-center mb-3">Create a new account</h1>
+          <h1 className="text-2xl sm:text-[32px] text-center mb-1.5 sm:mb-3">Create a new account</h1>
           <div className="">
             <form action="#">
               <div className="form-item">
